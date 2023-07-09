@@ -28,6 +28,7 @@ public class C01_TestNGIlkTest {
         Driver.getDriver().get("https://www.youtube.com");
         ReusableMethods.bekle(3);
         // git hub
+        //
 
         // url'i yazdırın
         System.out.println(Driver.getDriver().getCurrentUrl());
