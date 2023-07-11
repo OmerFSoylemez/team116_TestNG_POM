@@ -3,6 +3,9 @@ package utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 import java.time.Duration;
 
@@ -32,9 +35,37 @@ public class Driver {
 
          */
 
+        /*
+        İş yerimizde çalışırken testlerimizi farklı Browser lar ile çalıştırmamaız istenebilir
+        Dinamik olarak broweser kullanabilmek için con.properties dosyamıza browser = istenen browser
+        browser tanımladık
+
+        Driver classında da configuration.properties dosyasındaki
+        bilgiyi okuyup o bilgiye göre istenen browser ı oluşturacak
+        bir yapı hazırlayalım.
+         */
         WebDriverManager.chromedriver().setup();
 
         if(driver==null){
+
+            String browser = ConfigReader.getProperty("browser");
+
+            switch (browser) {
+
+                case "firefox" :
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+                case "safari" :
+                    WebDriverManager.safaridriver().setup();
+                    driver = new SafariDriver();
+                    break;
+                case "edge" :
+                    WebDriverManager.edgedriver().setup();
+                    driver = new EdgeDriver();
+                    break;
+                default:
+            }
             driver=new ChromeDriver();
         }
 
@@ -51,7 +82,11 @@ public class Driver {
             driver.close();
             driver = null;
         }
-
-
+    }
+    public static void quitDriver() {
+        if(driver != null){
+            driver.quit();
+            driver = null;
+        }
     }
 }
