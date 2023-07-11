@@ -11,7 +11,7 @@ public class C01_SingletonPattern {
 
         /*
             Singleton.pattern : bir class dan obje oluşturulmasını engellemek için kulllanılan bir yöntemdir.
-            Page object model de Web Driver olarak Driver Class ındaki Web Dribver methodunun kullanılmasını istiyoruz
+            Page object model de Web Driver olarak Driver Class ındaki getDriver methodunun kullanılmasını istiyoruz
 
             Driver class ının farklı kullanılmasını engellemk için
             POM li tasarlayanlar Singleton pattern kullanmışlardır

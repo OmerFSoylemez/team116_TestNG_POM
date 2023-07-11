@@ -40,11 +40,13 @@ public class Driver {
          */
 
         /*
-        İş yerimizde çalışırken testlerimizi farklı Browser lar ile çalıştırmamaız istenebilir
-        Dinamik olarak broweser kullanabilmek için con.properties dosyamıza browser = istenen browser
+        İş yerimizde çalışırken
+        testlerimizi farklı Browser lar ile çalıştırmamız istenebilir
+        Dinamik olarak browser kullanabilmek için
+        configuration.properties dosyamıza browser = istenen browser
         browser tanımladık
 
-        Driver classında da configuration.properties dosyasındaki
+        Driver class ında da configuration.properties dosyasındaki
         bilgiyi okuyup o bilgiye göre istenen browser ı oluşturacak
         bir yapı hazırlayalım.
          */

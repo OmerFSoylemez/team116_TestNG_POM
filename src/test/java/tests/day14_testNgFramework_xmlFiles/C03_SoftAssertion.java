@@ -59,6 +59,8 @@ public class C03_SoftAssertion {
             softassert ile yapılan assertşon larda mutlaka açıklama yazılmalıdır.
          */
 
+        Driver.closeDriver();
+
     }
 }
 
