@@ -25,7 +25,6 @@ public class C01_PagesIlkTset {
         amazonPage.aramaKutusu.sendKeys("Nutella" + Keys.ENTER);
 
 
-
         // sonuçların Nutella içerdiğini test edin
         String expectedIcerik = "Nutella";
         String actualSonucYazisi = amazonPage.sonucYaziElementi.getText();
