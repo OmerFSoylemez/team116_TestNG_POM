@@ -8,14 +8,14 @@ import utilities.Driver;
 public class AmazonPage {
 
     public AmazonPage() {
-        // baska package daki classların bu constranter ı kullanabilmeleri için
+        // baska package daki classların bu constructor ı kullanabilmeleri için
         // access modifier ını   public yapalım
 
         // bu page class ından locate kullanacak tum classlar
         // amazon page class ından obje oluşturmalı
-        // obje oluşturmak içiçnde mutlaka bu cons. çalışıcak
+        // obje oluşturmak içiçnde mutlaka bu constructor çalışacak
         // o zaman bu class da webDriver ımızı tanımlama işini
-        // bu cons içinde yapabiliriz
+        // bu constructor içinde yapabiliriz
 
         PageFactory.initElements(Driver.getDriver(),this);
     }

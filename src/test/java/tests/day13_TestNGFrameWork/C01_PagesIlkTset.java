@@ -12,13 +12,13 @@ public class C01_PagesIlkTset {
     @Test
     public void amazonTest() {
 
-        //amazon anasayfaya gidin
+        // amazon anasayfaya gidin
         Driver.getDriver().get("https://www.amazon.com");
 
-        //Nutellal için arama yapın
+        // Nutellal için arama yapın
         // Arama kutusuunun locatar'ına ihtiyacımız var
-        // LOcator larımız artık pages class larda
-        // Locator lar static olamdığı için obje oluşturarak kullanabşlriz
+        // Locator larımız artık pages class larda
+        // Locator lar static olamdığı için obje oluşturarak kullanabiliriz
 
         AmazonPage amazonPage = new AmazonPage();
 
@@ -28,9 +28,9 @@ public class C01_PagesIlkTset {
 
         // sonuçların Nutella içerdiğini test edin
         String expectedIcerik = "Nutella";
-        //String actualSonucYazisi = amazonPage.sonucYaziElementi;
+        String actualSonucYazisi = amazonPage.sonucYaziElementi.getText();
 
-       // Assert.assertTrue(actualSonucYazisi.contains(expectedIcerik));
+        Assert.assertTrue(actualSonucYazisi.contains(expectedIcerik));
 
         // Sayfayı kapatın
 
