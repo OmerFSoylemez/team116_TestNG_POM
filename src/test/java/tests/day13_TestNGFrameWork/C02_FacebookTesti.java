@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.FacebookPage;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C02_FacebookTesti {
 
@@ -30,6 +31,8 @@ public class C02_FacebookTesti {
 
         Assert.assertTrue(facebookPage.basarisizGirisYaziElementi.isDisplayed());
 
+
+        ReusableMethods.bekle(15);
         Driver.closeDriver();
 
 

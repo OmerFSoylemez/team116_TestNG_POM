@@ -12,7 +12,7 @@ public class C03_ConfigReader {
 
         System.out.println(ConfigReader.getProperty("wiseurl"));
 
-        //key yanlış yazılırsa,ConfigReader'daki properties objesi
+        // key yanlış yazılırsa,ConfigReader'daki properties objesi
         // yanlış yazılan key'i bulamaz ve null döner.
 
         System.out.println(ConfigReader.getProperty("kullaniciAdiAhmet"));
