@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Istenen test method'larini calistirma">
+
+    /!--
+    Eğer birden fazla hiyerarşiye ihtiyacınız varsa
+    uygun adimdan 2. bir hiyerarşi oluşturabilirisiniz
+    -->
+
+    <test name="method calistirma">
+
+        <classes>
+            <class name="tests.day13_TestNGFrameWork.C07_QDNegatifLoginTest">
+                <methods>
+                    <include name="gecersizPasswordTesti">
+
+                    </include>
+                </methods>
+
+            </class>
+        </classes>
+    </test>
+
+
+</suite>

@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Istenen groups calistirma">
+    
+    <!--
+        istediğimiz grupların toplu çalıştırmak için 
+        
+        xml dosyasında iki hiyerarşi oluşturuyoruz
+            1- Calisacak ve calışmayacak grupları belirleyecek
+            2= calistırılacak grupların bulundukları yerleri gösteren hiyereraşi
+     -->       
+    
+    <test name="groups calistirma">
+        <groups>
+            <run>
+                <include name="smoke"></include>
+                <exclude name="regression"></exclude>
+                <include name="mini regression1"></include>
+            </run>
+        </groups>
+        
+        <packages>
+            <package name="tests.day13_TestNGFrameWork"></package>
+            <package name="tests.day14_testNgFramework_xmlFiles"></package>
+        </packages>
+        
+    </test>
+</suite>
