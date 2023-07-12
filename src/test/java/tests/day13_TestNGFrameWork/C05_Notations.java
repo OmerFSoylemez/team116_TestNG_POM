@@ -44,13 +44,5 @@ public class C05_Notations {
         System.out.println("After Method calisti");
     }
 
-    @Test
-    public void test01(){
-        System.out.println("Test01 calisti");
-    }
 
-    @Test
-    public void test02(){
-        System.out.println("Test02 calisti");
-    }
 }
