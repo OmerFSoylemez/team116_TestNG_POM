@@ -8,7 +8,7 @@ import utilities.Driver;
 
 public class C06_QDLoginTest {
 
-    @Test(groups = {"smoke","mini"})
+    @Test(groups = {"smoke","mini regression","regression"})
     public void test01() {
 
         //  1- https://www.qualitydemy.com/ anasayfasina gidin

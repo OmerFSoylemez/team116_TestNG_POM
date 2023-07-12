@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.TestBaseCross;
+
 public class C03_BasicAuthentication extends TestBaseCross {
     @Test
     public void test01() throws InterruptedException {

@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Istenen Classlari paralel toplu calistirma" parallel="classes" thread-count="2">
+<suite name="Istenen Classlari paralel toplu calistirma" parallel="classes" thread-count="2" verbose="3">
 
     <test name="class calistirma">
 
@@ -21,6 +21,13 @@
                 paralel çalışan tüm browser'lar aynıdır.
                 farklı browser'larda paralel çalıştırma için (cross browser test)
                 özel bir configuration yapmak gerekir.
+
+          verbose="3" : tum xml dosyalarında kullanılabilir
+                        calıştırma sonrasında konsolda yazdırılan detay seviyesini belirler
+                        1 : minimum
+                        10 : maximum
+                        olmak üzere istediğimiz değeri seçebilirsiniz
+          -->
 
         <classes>
             <class name="tests.day12_testNG.C03_DependsOnMethods"></class>

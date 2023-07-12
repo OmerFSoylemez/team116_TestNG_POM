@@ -20,7 +20,7 @@
         <classes>
             <class name="tests.day15_crossBrowserTestler.C03_BasicAuthentication"></class>
         </classes>
-        
+
     </test>
 
 </suite>

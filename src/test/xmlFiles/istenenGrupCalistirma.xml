@@ -7,7 +7,7 @@
         
         xml dosyasında iki hiyerarşi oluşturuyoruz
             1- Calisacak ve calışmayacak grupları belirleyecek
-            2= calistırılacak grupların bulundukları yerleri gösteren hiyereraşi
+            2= calistırılacak testlerin bulundukları yerleri gösteren hiyereraşi
      -->       
     
     <test name="groups calistirma">
