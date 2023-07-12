@@ -4,6 +4,24 @@
 
     <test name="class calistirma">
 
+        <!--
+            paralel çalıştırmak için xml dosyamızda
+            çok küçük iki ekleme yapmamız yeterlidir
+
+            1-paralel="classes" / test /methods
+                bolüşümün hangi seviyede yapılacağını belirler
+                testler çalışırken çakışmalar olmaması
+                bağımlı testlerin aynı browser tarafından çalıştırılabilmesi
+                için tüm class ları/ package'lari manual olarak testlere ayırıp
+                test başında bolüşüm yapmak en uygun olacaktır.
+            2.thread-count="2"
+                ayni anda çalışacak browser sayisini belirler
+                yaptığımız bu configuration'da Browser'ın ne olduğu
+                configuration.properties dosyasından geldiği için
+                paralel çalışan tüm browser'lar aynıdır.
+                farklı browser'larda paralel çalıştırma için (cross browser test)
+                özel bir configuration yapmak gerekir.
+
         <classes>
             <class name="tests.day12_testNG.C03_DependsOnMethods"></class>
             <class name="tests.day13_TestNGFrameWork.C06_QDLoginTest"></class>
