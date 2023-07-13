@@ -4,8 +4,10 @@
 
     <!--
     kac farklı browser kullanacaksak
-    her  biir için test tagından itibaren
+    her  biri için test tagından itibaren
     çalışacak testleri yazmalıyız
+
+    her testin altında parameter kullanarak istenen browser seçin
     -->
     <test name="Chrome ile çalışacak testler">
         <parameter name="browser" value="chrome"></parameter>

@@ -34,7 +34,7 @@ public class C03_DataProviderAmazonAramaTesti {
 
         Assert.assertTrue(amazonPage.sonucYaziElementi.getText().contains(aranacakUrun));
 
-        Driver.closeDriver();
+        Driver.quitDriver();
 
     }
 }

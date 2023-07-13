@@ -33,7 +33,7 @@ public class C04_DataProviderNegatifLoginTesti extends TestBaseRapor {
         QdPage qdPage = new QdPage();
 
         // ilk login linkine tıklayın
-        qdPage.loginButonu.click();
+        qdPage.ilkLoginLinki.click();
 
 
         // kullanıcı adi ve şifresini yazip giriş yapmayı deneyin

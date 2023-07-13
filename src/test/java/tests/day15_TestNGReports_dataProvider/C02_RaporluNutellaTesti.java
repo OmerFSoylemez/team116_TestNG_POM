@@ -33,7 +33,7 @@ public class C02_RaporluNutellaTesti extends TestBaseRapor {
         extentTest.pass("Sonuclarin Nutella içerdiğini test eder");
 
         // sayfayı kapatın
-        Driver.closeDriver();
+        Driver.quitDriver();
 
 
     }
